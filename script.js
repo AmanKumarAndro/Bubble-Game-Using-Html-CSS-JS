@@ -21,7 +21,7 @@ function RunTimer() {
         else {
             clearInterval(timer);
             document.querySelector("#pbotm").innerHTML = `<h1 id = "over">Game Over</h1>`;
-            // <button id='play' onclick='PlayGame()' >PLAY AGAIN</button>
+
         }
 
     }, 1000)
@@ -35,50 +35,39 @@ function getScore() {
     document.getElementById("score").innerText = `${Score}`
 }
 function queryy() {
-  document.querySelector("#pbotm").addEventListener("click", function (dets) {
-    
-    
-    var clickedNumber = Number(dets.target.textContent);
-    console.log(clickedNumber)
-    if (clickedNumber==NaN) {
-        document.querySelector("#pbotm").innerHTML = `<h1 id = "over">Refresh Page</h1>`;
-        
-    }
-    if ((time>0)&&(clickedNumber == hitrn)) {
-        getScore();
-        bubble();
-        getHit();
-    }
-    if ((time>0)&&(typeof(clickedNumber)=='number')){
-        bubble();
-        getHit();
-    }
-    
-    // else {
-    //     bubble();
-    //     getHit();
-    // }
+    document.querySelector("#pbotm").addEventListener("click", function (dets) {
 
-})  
+
+        var clickedNumber = Number(dets.target.textContent);
+        console.log(clickedNumber)
+        if (clickedNumber == NaN) {
+            document.querySelector("#pbotm").innerHTML = `<h1 id = "over">Refresh Page</h1>`;
+
+        }
+        if ((time > 0) && (clickedNumber == hitrn)) {
+            getScore();
+            bubble();
+            getHit();
+        }
+        if ((time > 0) && (typeof (clickedNumber) == 'number')) {
+            bubble();
+            getHit();
+        }
+
+
+    })
 }
 
-// function start() {
-//     document.querySelector("#pbotm").addEventListener("click", function () {
-       
-//         getHit();
-//                 RunTimer();
-//                 bubble();
-//     })
-// }
+
 function start() {
     document.querySelector("#pbotm").addEventListener("click", function (dets) {
         var textt = dets.target.textContent;
-        if (textt=="Start Game") {
+        if (textt == "Start Game") {
             queryy();
             getHit();
             RunTimer();
             bubble();
-            
+
         }
         // else {
         //     document.querySelector("#pbotm").innerHTML = `<h1 id = "over" >Refresh Page</h1>`;
@@ -88,6 +77,3 @@ function start() {
 
 
 start();
-// getHit();
-//         RunTimer();
-//         bubble();
