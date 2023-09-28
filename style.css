@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1058%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1201.72 164.83 a138.28 138.28 0 1 0 276.56 0 a138.28 138.28 0 1 0 -276.56 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M211.3832804364461 220.8398730172678L365.11346400721663 242.44524133525576 386.71883232520463 88.71505776448521 232.98864875443408 67.10968944649724z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M693.2263333045116 492.96142586769895L752.9905667355524 410.7030154823955 599.7208344420768 362.185870528486z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M741.684%2c625.457C800.261%2c625.033%2c840.905%2c573.998%2c869.673%2c522.969C897.778%2c473.116%2c919.607%2c412.386%2c889.103%2c363.963C859.798%2c317.443%2c796.58%2c316.739%2c741.684%2c319.797C693.489%2c322.481%2c646.227%2c338.283%2c620.206%2c378.939C592.043%2c422.942%2c587.352%2c477.983%2c610.445%2c524.846C636.56%2c577.841%2c682.606%2c625.885%2c741.684%2c625.457' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1023.083%2c118.491C1057.741%2c118.011%2c1097.607%2c117.738%2c1115.13%2c87.833C1132.764%2c57.739%2c1115.15%2c21.808%2c1097.291%2c-8.153C1080.014%2c-37.138%2c1056.749%2c-64.287%2c1023.083%2c-66.586C985.595%2c-69.146%2c948.648%2c-51.656%2c928.965%2c-19.649C908.356%2c13.863%2c904.364%2c57.931%2c926.516%2c90.444C946.744%2c120.134%2c987.16%2c118.988%2c1023.083%2c118.491' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1029.939%2c411.36C1082.55%2c411.259%2c1145.625%2c417.851%2c1171.922%2c372.284C1198.216%2c326.723%2c1162.534%2c274.465%2c1134.706%2c229.824C1109.172%2c188.864%2c1078.068%2c148.171%2c1029.939%2c144.521C975.784%2c140.414%2c922.306%2c165.496%2c893.487%2c211.53C862.883%2c260.415%2c854.482%2c325.203%2c887.006%2c372.833C916.83%2c416.51%2c977.051%2c411.462%2c1029.939%2c411.36' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M611.2322795731951 393.77001636982504L527.6611951228149 380.533656931837 514.4248356848268 464.10474138221724 597.995920135207 477.34110082020527z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M886.884074604951 450.5342260016468L791.0774675607188 512.7517640946613 853.2950056537333 608.5583711388937 949.1016126979656 546.3408330458791z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M52.052%2c638.163C92.655%2c636.06%2c118.263%2c597.857%2c135.905%2c561.227C150.895%2c530.104%2c150.815%2c495.586%2c135.675%2c464.535C118.057%2c428.403%2c92.169%2c391.806%2c52.052%2c389.254C8.538%2c386.486%2c-31.177%2c414.424%2c-52.278%2c452.58C-72.723%2c489.551%2c-69.031%2c533.942%2c-48.328%2c570.769C-27.161%2c608.422%2c8.915%2c640.397%2c52.052%2c638.163' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1309.16 237.02 a126.59 126.59 0 1 0 253.18 0 a126.59 126.59 0 1 0 -253.18 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M349.7278923953401 324.94138213969666L365.8539851318433 172.9057938484148 242.8298641437633 225.12643499417828z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M759.65 428.4 a99.65 99.65 0 1 0 199.3 0 a99.65 99.65 0 1 0 -199.3 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1062.57071510182 474.4149553239395L984.5088733414088 404.1277572975273 914.2216753149967 482.1895990579385 992.2835170754079 552.4767970843507z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1058'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+#pannel {
+    width: 80%;
+    height: 80%;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ptop {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20%;
+    background-color: rgb(13, 114, 109);
+    
+}
+
+.elem {
+    /* width:20% ; */
+    display: flex;
+    gap: 20px;
+    
+}
+h2{
+    padding-top: 10px;
+}
+
+.box {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+#pbotm{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* background-color: #fff; */
+
+}
+#over{
+    font-size: 600%;
+    color: #ffffff;
+    transition: all ease 3s;
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% { color: rgb(255, 0, 0); }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+.bubble{
+    width: 50px;
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    background-color: rgb(7, 90, 86);
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+.bubble:hover{
+   
+    background-color: rgb(18, 197, 188);
+    
+}
+#start{
+    cursor:pointer ;
+}
+#start:hover{
+    filter: invert();
+}
+button{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+}
+span{
+    font-weight: 900;
+    font-style: oblique;
+    text-decoration: underline;
+}
